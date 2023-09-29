@@ -1,0 +1,252 @@
+/* Выбор периода для таблиц */
+
+.myperiod-row {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.myperiod-row h5 {
+    margin-top: 10px;
+}
+
+.myinput-period {
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    background: darkgrey;
+    color: darkslategrey;
+    max-width: max-content;
+
+}
+
+.mybtn-period {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    background: none;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.mybtn-period:hover {
+    background: darkgray;
+}
+
+/* Классы для DIV таблицы */
+
+.mydivtable {
+    margin-bottom: 10px;
+}
+
+.mysection {
+    max-width: 1048px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.mysection-profile {
+    max-width: 1048px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.rightup {
+    display: flex;
+    justify-content: right;
+    padding-right: 5px;
+    margin-bottom: -25px;
+    padding-top: 5px;
+}
+
+.downcenter {
+    text-align: center;
+}
+
+.myinput {
+    max-width: max-content;
+}
+
+.mysection h5,
+h6 {
+    display: flex;
+    padding-left: 5px;
+
+}
+
+/* Классы для всех таблиц */
+
+.page {
+    margin-top: 60px;
+}
+
+.div-mytable {
+    display: flex;
+    max-width: 1048px;
+    margin: auto;
+}
+
+.div-mytable-only {
+    display: flex;
+    max-width: 1048px;
+    margin: auto;
+}
+
+.mytable {
+    width: 1048px;
+    margin: 5px;
+    border-collapse: separate;
+}
+
+.mytable th,
+td {
+    padding: 1.5px;
+    text-align: center;
+}
+
+.mytable th {
+    border-radius: 5px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+.input-add {
+    background: none;
+    border: none;
+    border-radius: 2px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+}
+
+.input-add::placeholder {
+    color: darkslategrey;
+}
+
+.input-update-profile {
+    background: none;
+    border: none;
+    color: gray;
+}
+
+
+.textarea-update-profile {
+    background: none;
+    border: none;
+    color: black;
+}
+
+.btn-add {
+    background: none;
+    border: none;
+    font-size: 16px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.clickable-cell {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.btn-delete {
+    background: none;
+    color: darkred;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.checkbox {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+
+/* Таблицы Бухгалтерии */
+
+.mytable-main-accounting {
+    max-width: 1048px;
+    margin: auto;
+    padding-left: 5px;
+}
+
+.mytable-up-accounting {
+    text-align: center;
+    justify-content: center;
+}
+
+.accounting-btn {
+    display: flex;
+    justify-content: center;
+}
+
+/* Профайл клиента */
+
+/* Информация о клиенте */
+
+.profile-note {
+    display: block;
+    max-width: 1048px;
+    margin: auto;
+    border-radius: 9px;
+    margin-top: 60px;
+    overflow: auto;
+    margin-bottom: 5px;
+}
+
+.profile-bd-name {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    margin-left: 50px;
+}
+
+.profile-inf {
+    margin: 5px;
+    padding: 5px;
+}
+
+.profile-inf h4 {
+    margin: 5px;
+}
+
+
+.comments {
+    z-index: 1;
+    margin-bottom: 5px;
+
+}
+
+.comment {
+    display: none;
+    overflow: hidden;
+    z-index: 2;
+    transition: height 0.5s ease-in-out;
+}
+
+.comment.active {
+    display: block;
+    height: auto;
+}
+
+
+/* jQuery */
+
+.jQuery_appear {
+    display: none;
+}

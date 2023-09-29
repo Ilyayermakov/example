@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "./reset.css";
+
+* {
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+/* Задний фон */
+
+body {
+    background-image: url('http://localhost/laravel/onecode/public/img/wooden_background.jpg');
+    background-repeat: repeat;
+    margin-top: 70px
+}
+
+h2 {
+    font-size: 34px;
+}
+
+/* Ссылки */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.social {
+    max-width: 25px;
+    max-height: 25px;
+}
+
+/* Окно смены */
+
+.mychange {
+    display: flex;
+    margin: 10px;
+}
+
+.btn-add-change {
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    padding: 2px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Окно title */
+
+.myperiod {
+    display: flex;
+    max-width: 1048px;
+    margin: auto;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 9px;
+    background: #D7CCC8;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    padding: 5px;
+}
+
+.myperiod h2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Alert */
+
+.myalert {
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    max-width: max-content;
+    max-height: max-content;
+    color: rgb(168, 32, 32);
+    background-color: rgb(55, 184, 184);
+}
+
+/* Navbar */
+
+.mynavbar {
+    display: flex;
+    margin: auto;
+    max-width: 1048px;
+    border-radius: 9px;
+    position: fixed;
+    top: 5px;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    font-family: Roboto, sans-serif;
+}
+
+.mynavbar img {
+    width: 75px;
+    height: 55px;
+    border-radius: 9px;
+}
+
+.mynavbar a {
+    border-radius: 9px;
+}
+
+.myenter {
+    display: block;
+    text-align: center;
+}
+.myenter p {
+
+}
+
+.mynav-link {
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+.current-time {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.7em;
+}
+
+.mynav-list {
+    display: flex;
+    height: 100%;
+}
+
+.mynav-list a {
+    display: block;
+    padding: 1em;
+}
+
+/* Кнопка для адаптивной верстки */
+
+.btn-nav {
+    display: none;
+}
+
+/* Цвета Окна навигации */
+
+.current-time {
+    color: black;
+    font-family: Roboto, sans-serif;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.mynav-list a {
+    color: black;
+}
+
+.mynavbar {
+    background: #D7CCC8;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+}
+
+.mynav-list a:hover {
+    background: radial-gradient(#d59d9d 25%, #9e9ec2 100%);
+}
+
+a.login,
+a.logout {
+    color: darkslategrey;
+}
+
+.active {}
+
+/* положение Календаря */
+.calendar {
+    display: none;
+}
+
+.calendar.activate {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 45px;
+}
+
+/* Кнопка Калькулятора (бесконечности)*/
+.calculate-infin {
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* Положение Калькулятора */
+.calculator-container {
+    display: none;
+}
+
+.calculator-container.activate {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 45px
+}
+
+/* Калькулятор */
+
+.calculatorLocation {
+    display: flex;
+    position: absolute;
+    right: 255px;
+}
+
+.calculator {
+    width: 300px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background: #D7CCC8;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+}
+
+.calcResults {
+    width: 100%;
+    font-family: 'Audiowide', 'BRUSH SCRIPT MT', cursive, sans-serif;
+    text-align: right;
+}
+
+#calcExpression,
+#calcResult {
+    background: #607D8B;
+    border: 1px solid black;
+    padding-right: 5px;
+}
+
+#calcResult {
+    height: 35px;
+    font-size: 2em;
+    border-bottom: none;
+}
+
+#calcExpression {
+    height: 20px;
+    border-top: none;
+    color: #263238;
+    overflow: hidden;
+}
+
+.calcNumbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.calcOperations,
+.calcClears {
+    display: flex;
+    flex-direction: column;
+}
+
+.calcOperations * {
+    font-size: 1.5em;
+}
+
+.calcClears * {
+    background: #EF5350;
+    color: white;
+}
+
+.calculator button {
+    border: none;
+    border-radius: 10px;
+    width: 25px;
+    height: 25px;
+    margin: 1px;
+    text-align: center;
+    outline: none;
+    font-family: 'Audiowide', 'BRUSH SCRIPT MT', cursive, sans-serif;
+    -webkit-box-shadow: 0px 3px 0px 0px #212121;
+    -moz-box-shadow: 0px 3px 0px 0px #212121;
+    box-shadow: 0px 3px 0px 0px #212121;
+}
+
+.calculator button:active {
+    transform: translateY(2px);
+}
+
+.calcNumber,
+.calcOperation,
+.calcEquals {
+    background: #263238;
+    color: white;
+}
+
+/* lang */
+
+.changelanguage {
+    z-index: 1;
+    margin-bottom: 5px;
+}
+
+.language {
+    display: none;
+    overflow: hidden;
+    z-index: 2;
+    transition: height 0.5s ease-in-out;
+}
+
+.language.active {
+    display:flex;
+    height: auto;
+}
+
+.language.active .changelanguage {
+    display: none;
+}
+/* Адаптивная верстка */
+
+@media (max-width: 1048px) {
+    .mynav-list {
+        display: none;
+    }
+
+    .mynavbar {
+        margin: 0;
+        padding: 0;
+    }
+
+    .mynavbar img {
+        height: 44px;
+    }
+
+    .current-time {
+        display: flex;
+
+
+    }
+
+    .btn-nav {
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 4px;
+        border: none;
+        height: 95%;
+        background-color: #D7CCC8;
+        box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+        color: white;
+        display: block;
+        cursor: pointer;
+        border-radius: 9px;
+
+    }
+
+    .mynav-drop .mynav-list {
+        display: block;
+        position: absolute;
+        background-color: #D7CCC8;
+        box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+        height: 0;
+        border-radius: 9px;
+        overflow: hidden;
+
+    }
+
+    .mynav-drop:hover .mynav-list {
+        height: auto;
+    }
+
+
+}

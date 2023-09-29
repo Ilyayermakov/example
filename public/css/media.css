@@ -1,0 +1,417 @@
+@media screen and (max-width: 1048px) {
+
+    /* Blog */
+    .mygrid {
+        display: block;
+    }
+
+    /* Таблицы */
+
+    .myperiod-row {
+        display: block;
+    }
+
+    .mytable thead {
+        display: none;
+    }
+
+    .mytable tr {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .mytable td {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 13px;
+        margin-left: 10px;
+        padding-right: 5px;
+    }
+
+    .mytable td:before {
+        content: attr(data-label);
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .tfoot td {
+        padding-top: 10px;
+        justify-content: center;
+    }
+
+    .accounting td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .mymynavbar {
+        max-width: 960px;
+    }
+
+    .note {
+        width: 950px;
+    }
+
+    .record-note {
+        max-width: 936px;
+    }
+
+    .period {
+        width: 936px;
+    }
+
+    .mytable td {
+        width: 936px;
+    }
+}
+
+@media screen and (max-width: 896px) {
+
+    .mynavbar {
+        max-width: 896px;
+    }
+
+    .note {
+        width: 886px;
+    }
+
+    .record-note {
+        max-width: 872px;
+    }
+
+    .period {
+        width: 872px;
+    }
+
+    .mytable td {
+        width: 872px;
+    }
+}
+
+@media screen and (max-width: 828px) {
+    .mynavbar {
+        max-width: 828px;
+    }
+
+    .note {
+        width: 778px;
+    }
+
+    .record-note {
+        max-width: 704px;
+    }
+
+    .period {
+        width: 704px;
+    }
+
+    .mytable td {
+        width: 704px;
+    }
+}
+
+@media screen and (max-width: 812px) {
+
+    .mynavbar {
+        max-width: 812px;
+    }
+
+    .note {
+        width: 802px;
+    }
+
+    .record-note {
+        max-width: 778px;
+    }
+
+    .period {
+        width: 778px;
+    }
+
+    .mytable td {
+        width: 778px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .mynavbar {
+        max-width: 800px;
+    }
+
+    .note {
+        width: 790px;
+    }
+
+    .record-note {
+        max-width: 766px;
+    }
+
+    .period {
+        width: 766px;
+    }
+
+    .mytable td {
+        width: 766px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .mynavbar {
+        max-width: 768px;
+    }
+
+    .note {
+        width: 758px;
+    }
+
+    .record-note {
+        max-width: 744px;
+    }
+
+    .period {
+        width: 744px;
+    }
+
+    .mytable td {
+        width: 744px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+
+    .mynavbar {
+        max-width: 736px;
+    }
+
+    .note {
+        width: 726px;
+    }
+
+    .record-note {
+        max-width: 712px;
+    }
+
+    .period {
+        width: 712px;
+    }
+
+    .mytable td {
+        width: 712px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+
+    .mynavbar {
+        max-width: 667px;
+    }
+
+    .note {
+        width: 657px;
+    }
+
+    .record-note {
+        max-width: 633px;
+    }
+
+    .period {
+        width: 633px;
+    }
+
+    .mytable td {
+        width: 633px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .mynavbar {
+        max-width: 640px;
+    }
+
+    .note {
+        width: 630px;
+    }
+
+    .record-note {
+        max-width: 614px;
+    }
+
+    .period {
+        width: 614px;
+    }
+
+    .mytable td {
+        width: 614px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .mynavbar {
+        max-width: 600px;
+    }
+
+    .note {
+        width: 590px;
+    }
+
+    .record-note {
+        max-width: 566px;
+    }
+
+    .period {
+        width: 566px;
+    }
+
+    .mytable td {
+        width: 566px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+
+    .mynavbar {
+        max-width: 568px;
+    }
+
+    .note {
+        width: 558px;
+    }
+
+    .record-note {
+        max-width: 544px;
+    }
+
+    .period {
+        width: 544px;
+    }
+
+    .mytable td {
+        width: 544px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .mynavbar {
+        max-width: 480px;
+    }
+
+    .note {
+        width: 470px;
+    }
+
+    .record-note {
+        max-width: 556px;
+    }
+
+    .period {
+        width: 556px;
+    }
+
+    .mytable td {
+        width: 556px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    .mynavbar {
+        max-width: 414px;
+    }
+
+    .note {
+        width: 404px;
+    }
+
+    .record-note {
+        max-width: 390px;
+    }
+
+    .period {
+        width: 390px;
+    }
+
+    .mytable td {
+        width: 390px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .mynavbar {
+        max-width: 375px;
+    }
+
+    .note {
+        width: 365px;
+    }
+
+    .record-note {
+        max-width: 351px;
+    }
+
+    .period {
+        width: 351px;
+    }
+
+    .mytable td {
+        width: 351px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .mynavbar {
+        max-width: 360px;
+    }
+
+    .note {
+        width: 350px;
+    }
+
+    .record-note {
+        max-width: 336px;
+    }
+
+    .period {
+        width: 336px;
+    }
+
+    .mytable td {
+        width: 336px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .mynavbar {
+        max-width: 320px;
+    }
+
+    .note {
+        width: 310px;
+    }
+
+    .record-note {
+        max-width: 296px;
+    }
+
+    .period {
+        width: 296px;
+    }
+
+    .mytable td {
+        width: 296px;
+    }
+}

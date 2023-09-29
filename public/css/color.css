@@ -1,0 +1,104 @@
+/* Подсвечивание ячеек в таблицах */
+
+.mydivtable:hover {
+    background-color: #f3eab4;
+}
+
+.mydivtable h5:hover {
+    max-width: max-content;
+    background-color: #e2dc85;
+}
+
+.mydivtable h6:hover {
+    max-width: max-content;
+    background-color: #e2dc85;
+}
+
+.mydivtable button:hover {
+    background-color: #e2dc85;
+}
+
+.mytable td:hover {
+    background: #e2dc85;
+}
+
+tbody tr:hover>td {
+    background: #f3eab4;
+}
+
+.mycolor-grey {
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+}
+
+.color-light-grey {
+    background: #D7CCC8;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+}
+
+.color-gold {
+    background: rgb(165, 120, 6);
+}
+
+.note {
+    background: rgb(142, 139, 139);
+}
+
+/* Таблица с Записями */
+
+.appointment th,
+.appointment td {
+    background-color: rgb(105, 113, 46);
+}
+
+.myappointment {
+    background-color: rgb(105, 113, 46);
+}
+
+/* Таблица с Хранилищем Записей */
+
+.vault-appointment th,
+.vault-appointment td {
+    background: rgb(186, 151, 99);
+}
+
+/* Таблица с Клиентами */
+
+.client th,
+.client td {
+    background: rgb(191, 159, 159);
+}
+
+/* Таблица с Материалами */
+
+.material th,
+.material td {
+    background: rgb(203, 182, 142);
+}
+
+/* Таблица с Прецедурами */
+
+.procedura th,
+.procedura td {
+    background: rgb(162, 180, 199);
+}
+
+/* Таблица Бухгалтерии */
+
+.accounting th,
+.accounting td {
+    background: rgb(165, 120, 6);
+}
+
+/* Таблица Затраченых материалов из профиля */
+
+.vault-material th,
+.vault-material td {
+    background: rgb(157, 170, 97);
+}
+
+/* Таблица юзеров */
+.admin-color th,
+.admin-color td {
+    background: rgb(90, 125, 115);
+    /* box-shadow: 4px 4px 5px 0px rgb(90, 125, 115), inset -3px -2px 19px 1px rgb(90, 125, 1115); */
+}
