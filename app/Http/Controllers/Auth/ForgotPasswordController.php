@@ -31,16 +31,21 @@ class ForgotPasswordController extends Controller
             if ($user->isActive()) {
                 $password = $user->password;
 
+                $code = mt_rand(000000, 999999);
+                $user = User::find($user->id);
+                $user->code = $code;
+                $user->save();
 
                 $emailData = [
                     'name' => $user->name,
                     'email' => $user->email,
                     'id' => $user->id,
+                    'code' => $user->code,
                     'hash' => sha1($user->password),
                 ];
 
                 Mail::send('emails.password_forgot', $emailData, function ($message) use ($emailData) {
-                    $message->to($emailData['email'], $emailData['name'])
+                    $message->to($emailData['email'], $emailData['name'], $emailData['code'])
                         ->subject(__('Забыли пароль'));
                 });
 
@@ -75,6 +80,7 @@ class ForgotPasswordController extends Controller
     {
         $user = User::where('id', $request->id)
             ->whereNotNull('email_verified_at')
+            ->whereNotNull('code')
             ->where('active', true)
             ->first();
 
@@ -87,19 +93,31 @@ class ForgotPasswordController extends Controller
     }
 
     public function updatePassword(Request $request)
-    {
-        $request->validate([
-            'new_password' => ['nullable', 'string', 'min:7', 'max:50'],
-            'password_confirmation' => ['nullable', 'same:new_password'],
-        ]);
-        $user = session('user');
+{
+    $request->validate([
+        'new_password' => ['string', 'min:7', 'max:50'],
+        'password_confirmation' => ['same:new_password'],
+        'code' => ['numeric']
+    ]);
 
-        if ($user) {
+    $user = session('user');
+
+    if ($user) {
+
+        if ($request->code == $user->code) {
+
             $user->password = Hash::make($request->input('new_password'));
+            $user->code = null;
             $user->save();
+
             return view('login.index');
+
         } else {
-            return redirect('home');
+            return redirect()->back()->withErrors('Неверный код.');
         }
+    } else {
+        return redirect('home');
     }
+}
+
 }
